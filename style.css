@@ -4,6 +4,16 @@
    margin: 0px;
  }
 
+ h1 {
+   font-size: 40px;
+   font-family: 'Oswald', sans-serif;
+ }
+
+ h2 {
+  font-size: 24px;
+  font-family: 'Oswald', sans-serif;
+}
+
 #navigation {
   width: 100%;
   background-color: #E6F6CA;
@@ -63,4 +73,79 @@ img {
     width: 30%;
     min-width: 350px;
     max-width: 600px;
+}
+
+
+
+
+
+
+.search-text{
+	margin-top:50px;
+	background-color: #F1C555;
+	padding-top:60px;
+	padding-bottom:60px;
+}
+
+.search-text .input-search{
+	height:45px;
+	width:40%;
+	padding-left:20px;
+    color:black;
+}
+
+.search-text .btn-search{
+    background: #da3e44;
+    font-family: 'Roboto', sans-serif;
+    border:none;
+	color:#FFF;
+	height: 45px;
+    width: 80px;
+}
+
+.search-text h4{
+    color: black;
+    font-weight: 700;
+}
+
+footer{
+     background-color: #163750;
+     padding:30px 0px;
+}
+
+.address span , .menu span{
+   color: #FFF;
+   font-weight: bold;
+   border-bottom: 1px solid #c7c7c7;
+   padding:10px 0px;
+   display: block;
+   text-transform: uppercase;
+   font-size: 16px;
+   letter-spacing: 3px;
+}
+
+.address li a , .menu li a{
+    color:#FFF;
+    letter-spacing: 3px;
+    text-decoration:none;
+    font-size:14px;
+}
+
+.address li, .menu li{
+    margin:20px 0px;
+    list-style: none;
+}
+
+.address li a:hover , .menu li a:hover{
+    color: #da3e44;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+.address .fa{
+    color: #da3e44;
+    margin-right: 10px;
+    font-size:18px;
 }
