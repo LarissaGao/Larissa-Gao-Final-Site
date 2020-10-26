@@ -1,176 +1,167 @@
 /* [THE "DATABASE" - QUESTIONS, OPTIONS, ANSWERS] */
 // An array that contains objects
 // In the format of {q: QUESTION, o: OPTIONS, a: CORRECT ANSWER}
-var questions = [
-  {
-    q : "Poor mental health increases the risk for chronic physical conditions like",
-    o : [
-      "Heart disease",
-      "Stroke",
-      "Cancer",
-      "All of the above"
-    ],
-    a : 3 // arrays start with 0, so it is 70 meters
-  },
-  {
-    q : "Is mental illnesses very common?",
-    o : [
-      "Yes",
-      "No"
-    ],
-    a : 0
-  },
-  {
-    q : "Suicide is the ___ cause of death among people from 15 to 34 in the U.S.",
-    o : [
-      "4th",
-      "10th",
-      "2nd",
-      "1st"
-    ],
-    a : 2
-  },
-  {
-    q : "Mental illnesses cannot be treated.",
-    o : [
-      "Yes",
-      "No"
-    ],
-    a : 1
-  },
-  {
-    q : "Half of mental illness occurs before a person turns ___ years old.",
-    o : [
-      "14",
-      "18",
-      "21",
-      "24"
-    ],
-    a : 0
-  },
-  {
-    q : "All people with mental illnesses are dangerous.",
-    o : [
-      "Yes",
-      "No"
-    ],
-    a : 1
-  },
-  {
-    q : "How many mental disorders defined by The Diagnostic and Statistical Manual Disorders?",
-    o : [
-      "1-100",
-      "100-200",
-      "300-400",
-      "Over 400"
-    ],
-    a : 3
-  },
-  {
-    q : "Which one listed below is not mental disorder?",
-    o : [
-      "Perfectionism",
-      "Sleepwalking disorder",
-      "Down syndrome",
-      "Alzheimer's disease",
-      "None of them"
-    ],
-    a : 4
-  }
-];
+var questions = [{
+	q: "Poor mental health increases the risk for chronic physical conditions like",
+	o: [
+		"Heart disease",
+		"Stroke",
+		"Cancer",
+		"All of the above"
+	],
+	a: 3 // arrays start with 0, so it is 70 meters
+}, {
+	q: "Is mental illnesses very common?",
+	o: [
+		"Yes",
+		"No"
+	],
+	a: 0
+}, {
+	q: "Suicide is the ___ cause of death among people from 15 to 34 in the U.S.",
+	o: [
+		"4th",
+		"10th",
+		"2nd",
+		"1st"
+	],
+	a: 2
+}, {
+	q: "Mental illnesses cannot be treated.",
+	o: [
+		"Yes",
+		"No"
+	],
+	a: 1
+}, {
+	q: "Half of mental illness occurs before a person turns ___ years old.",
+	o: [
+		"14",
+		"18",
+		"21",
+		"24"
+	],
+	a: 0
+}, {
+	q: "All people with mental illnesses are dangerous.",
+	o: [
+		"Yes",
+		"No"
+	],
+	a: 1
+}, {
+	q: "How many mental disorders defined by The Diagnostic and Statistical Manual Disorders?",
+	o: [
+		"1-100",
+		"100-200",
+		"300-400",
+		"Over 400"
+	],
+	a: 3
+}, {
+	q: "Which one listed below is not mental disorder?",
+	o: [
+		"Perfectionism",
+		"Sleepwalking disorder",
+		"Down syndrome",
+		"Alzheimer's disease",
+		"None of them"
+	],
+	a: 4
+}];
 
 /* [QUIZ ENGINE] */
 var quiz = {
-  draw : function () {
-  // quiz.draw() : draw the quiz
+	draw: function() {
+		// quiz.draw() : draw the quiz
 
-    // Fetch the HTML quiz wrapper
-    var wrapper = document.getElementById("quiz-wrap");
+		// Fetch the HTML quiz wrapper
+		var wrapper = document.getElementById("quiz-wrap");
 
-    // Loop through all the questions
-    // Create all the necessary HTML elements
-    for (var index in questions) {
-      var number = parseInt(index) + 1; // The current question number
-      var qwrap = document.createElement("div"); // A div wrapper to hold this question and options
-      qwrap.classList.add("question"); // CSS class, for cosmetics
+		// Loop through all the questions
+		// Create all the necessary HTML elements
+		for (var index in questions) {
+			var number = parseInt(index) + 1; // The current question number
+			var qwrap = document.createElement("div"); // A div wrapper to hold this question and options
+			qwrap.classList.add("question"); // CSS class, for cosmetics
 
-      // The question - <h1> header
-      var question = document.createElement("h1");
-      question.innerHTML = number + ") " + questions[index]['q'];
-      qwrap.appendChild(question);
+			// The question - <h1> header
+			var question = document.createElement("h1");
+			question.innerHTML = number + ") " + questions[index]['q'];
+			qwrap.appendChild(question);
 
-      // The options - <input> radio buttons and <label>
-      for (var oindex in questions[index]['o']) {
-        // The <label> tag
-        var label = document.createElement("label");
-        qwrap.appendChild(label);
+			// The options - <input> radio buttons and <label>
+			for (var oindex in questions[index]['o']) {
+				// The <label> tag
+				var label = document.createElement("label");
+				qwrap.appendChild(label);
 
-        // The <option> tag
-        var option = document.createElement("input");
-        option.type = "radio";
-        option.value = oindex;
-        option.required = true;
-        option.classList.add("oquiz"); // Will explain this later in function submit below
+				// The <option> tag
+				var option = document.createElement("input");
+				option.type = "radio";
+				option.value = oindex;
+				option.required = true;
+				option.classList.add("oquiz"); // Will explain this later in function submit below
 
-        // Remember that a radio button group must share the same name
-        option.name = "quiz-" + number;
-        label.appendChild(option);
+				// Remember that a radio button group must share the same name
+				option.name = "quiz-" + number;
+				label.appendChild(option);
 
-        // Add the option text
-        var otext = document.createTextNode(questions[index]['o'][oindex]);
-        label.appendChild(otext);
-      }
+				// Add the option text
+				var otext = document.createTextNode(questions[index]['o'][oindex]);
+				label.appendChild(otext);
+			}
 
-      // Finally, add this question to the main HTML quiz wrapper
-      wrapper.appendChild(qwrap);
-    }
+			// Finally, add this question to the main HTML quiz wrapper
+			wrapper.appendChild(qwrap);
+		}
 
-    // Attach submit button + event handler to the quiz wrapper
-    var submitbutton = document.createElement("input");
-    submitbutton.type = "submit";
-    wrapper.appendChild(submitbutton);
-    wrapper.addEventListener("submit", quiz.submit);
-  },
+		// Attach submit button + event handler to the quiz wrapper
+		var submitbutton = document.createElement("input");
+		submitbutton.type = "submit";
+		wrapper.appendChild(submitbutton);
+		wrapper.addEventListener("submit", quiz.submit);
+	},
 
-  submit : function (evt) {
-  // quiz.submit() : Handle the calculations when the user submits to quiz
+	submit: function(evt) {
+		// quiz.submit() : Handle the calculations when the user submits to quiz
 
-    // Stop the form from submitting
-    evt.preventDefault();
-    evt.stopPropagation();
+		// Stop the form from submitting
+		evt.preventDefault();
+		evt.stopPropagation();
 
-    // Remember that we added an "oquiz" class to all the options?
-    // We can easily get all the selected options this way
-    var selected = document.querySelectorAll(".oquiz:checked");
+		// Remember that we added an "oquiz" class to all the options?
+		// We can easily get all the selected options this way
+		var selected = document.querySelectorAll(".oquiz:checked");
 
-    // Get the score
-    var score = 0;
-    for (var index in questions) {
-      if (selected[index].value == questions[index]['a']) {
-        score++;
-      }
-    }
+		// Get the score
+		var score = 0;
+		for (var index in questions) {
+			if (selected[index].value == questions[index]['a']) {
+				score++;
+			}
+		}
 
-    // We can calculate the score now
-    var total = selected.length;
-    var percent = score / total ;
+		// We can calculate the score now
+		var total = selected.length;
+		var percent = score / total;
 
-    // Update and show the score
-    // Instead of creating elements, we can also directly alter the inner HTML
-    var html = "<h1>";
-    if (percent=1) {
-      html += "WELL DONE!";
-    } else if (percent>=0.7) {
-      html += "Good!";
-    }else if (percent>=0.4) {
-      html += "NOT BAD!";
-    } else {
-      html += "TRY HARDER!";
-    }
-    html += "</h1>";
-    html += "<div>You scored " + score + " out of " + total + ".</div>";
-    document.getElementById("quiz-wrap").innerHTML = html;
-  }
+		// Update and show the score
+		// Instead of creating elements, we can also directly alter the inner HTML
+		var html = "<h1>";
+		if (percent = 1) {
+			html += "WELL DONE!";
+		} else if (percent >= 0.7) {
+			html += "Good!";
+		} else if (percent >= 0.4) {
+			html += "NOT BAD!";
+		} else {
+			html += "TRY HARDER!";
+		}
+		html += "</h1>";
+		html += "<div>You scored " + score + " out of " + total + ".</div>";
+		document.getElementById("quiz-wrap").innerHTML = html;
+	}
 };
 
 /* [INIT] */
