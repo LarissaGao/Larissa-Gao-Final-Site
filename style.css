@@ -10,7 +10,7 @@
  }
 
  h2 {
-  font-size: 24px;
+  font-size: 28px;
   font-family: 'Oswald', sans-serif;
 }
 
@@ -74,12 +74,71 @@ img {
     min-width: 350px;
     max-width: 600px;
 }
+/*third-page special*/
+#cta p{
+  text-align: center;
+  font-size: 20px;
+}
+#answers {
+  background-color: #f2f2f2;
+  margin: 0px;
+  padding: 0px;
+}
+
+#answers h2{
+  font-size: 24px;
+}
+#answers p{
+    font-size: 22px;
+    text-align: center;
+}
+
+#moreinfo p{
+  text-align: center;
+}
+
+/* The entire quiz form */
+#quiz-wrap {
+  font-family: 'Oxygen', sans-serif;
+}
+
+/* Wrapper of each question */
+#quiz-wrap .question {
+  padding: 15px;
+  margin: 10px;
+  background: #f2f2f2;
+  border: 3px solid #ccc;
+  border-radius: 10px;
+}
+
+/* Question */
+#quiz-wrap h1 {
+  font-size: 22px;
+  margin: 5px 0;
+}
+
+/* Options */
+#quiz-wrap label {
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  margin-top: 10px;
+  color: #333;
+}
+
+/* Submit Button */
+#quiz-wrap input[type=submit] {
+  background: #972121;
+  color: #fff;
+  padding: 10px;
+  border: 0;
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 20px;
+}
 
 
-
-
-
-
+/* footer */
 .search-text{
 	margin-top:50px;
 	background-color: #F1C555;
@@ -98,8 +157,8 @@ img {
     background: #da3e44;
     font-family: 'Roboto', sans-serif;
     border:none;
-	color:#FFF;
-	height: 45px;
+	  color:#FFF;
+	  height: 45px;
     width: 80px;
 }
 
@@ -113,7 +172,7 @@ footer{
      padding:30px 0px;
 }
 
-.address span , .menu span{
+.address li , .menu li{
    color: #FFF;
    font-weight: bold;
    border-bottom: 1px solid #c7c7c7;
