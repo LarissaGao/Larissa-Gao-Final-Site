@@ -70,9 +70,9 @@ p a:hover {
 
 img {
     border: none;
-    width: 30%;
+    width: 40%;
     min-width: 350px;
-    max-width: 600px;
+    max-width: 800px;
 }
 /*third-page special*/
 #cta p{
