@@ -104,11 +104,6 @@ img {
   text-align: center;
   font-size: 20px;
 }
-#answers {
-  background-color: #f2f2f2;
-  margin: 0px;
-  padding: 0px;
-}
 
 #answers h2{
   font-size: 24px;
@@ -163,7 +158,62 @@ img {
   font-size: 20px;
 }
 
-
+#answer1{
+    padding: 15px;
+    margin: 10px;
+    background: #fff;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+  }
+#answer2{
+    padding: 15px;
+    margin: 10px;
+    background: #fff;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+  }
+#answer3{
+      padding: 15px;
+      margin: 10px;
+      background: #fff;
+      border: 3px solid #ccc;
+      border-radius: 10px;
+}
+#answer4{
+     padding: 15px;
+     margin: 10px;
+     background: #fff;
+     border: 3px solid #ccc;
+     border-radius: 10px;
+}
+#answer5{
+     padding: 15px;
+     margin: 10px;
+     background: #fff;
+     border: 3px solid #ccc;
+     border-radius: 10px;
+}
+#answer6{
+     padding: 15px;
+     margin: 10px;
+     background: #fff;
+     border: 3px solid #ccc;
+     border-radius: 10px;
+}
+#answer7{
+     padding: 15px;
+     margin: 10px;
+     background: #fff;
+     border: 3px solid #ccc;
+     border-radius: 10px;
+}
+#answer8{
+     padding: 15px;
+     margin: 10px;
+     background: #fff;
+     border: 3px solid #ccc;
+     border-radius: 10px;
+}
 /* footer */
 .search-text{
 	margin-top:50px;
