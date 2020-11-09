@@ -14,6 +14,13 @@
   font-family: 'Oswald', sans-serif;
 }
 
+h3{
+  font-size: 24px;
+  font-family: 'Oswald', sans-serif;
+  text-align: left;
+  padding-left: 100px;
+}
+
 #navigation {
   width: 100%;
   background-color: #E6F6CA;
@@ -77,10 +84,21 @@ p a:hover {
 
 img {
     border: none;
-    width: 40%;
+    width: 50%;
     min-width: 350px;
     max-width: 800px;
 }
+
+#treatment img{
+  width: 40%;
+  min-width: 350px;
+  max-width: 500px;
+}
+
+#treatment p{
+  font-size: 20px;
+}
+
 /*third-page special*/
 #cta p{
   text-align: center;
@@ -113,7 +131,7 @@ img {
 #quiz-wrap .question {
   padding: 15px;
   margin: 10px;
-  background: #f2f2f2;
+  background: #fff;
   border: 3px solid #ccc;
   border-radius: 10px;
 }
@@ -135,8 +153,9 @@ img {
 
 /* Submit Button */
 #quiz-wrap input[type=submit] {
-  background: #972121;
   color: #fff;
+  background: #da3e44;
+  font-family: 'Roboto', sans-serif;
   padding: 10px;
   border: 0;
   padding: 10px 20px;
@@ -214,4 +233,41 @@ footer{
     color: #da3e44;
     margin-right: 10px;
     font-size:18px;
+}
+
+
+
+@media screen and (max-width: 800px) {
+  p {
+    font-size: 23px;
+  }
+  #navigation ul{
+    flex-flow: wrap;
+  }
+  img{
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #navigation ul{
+    flex-flow: column;
+    padding: 0;
+    font-size: 23px;
+  }
+  h1{
+    font-size: 42px;
+  }
+  h2{
+    font-size: 30px;
+  }
+  h3{
+    font-size: 26px;
+  }
+  p {
+   font-size: 23px;
+  }
+  img{
+    width: 100%;
+  }
 }
