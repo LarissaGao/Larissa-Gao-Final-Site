@@ -98,6 +98,9 @@ img {
 #treatment p{
   font-size: 20px;
 }
+#pictures img{
+  width: 30%;
+}
 
 /*third-page special*/
 #cta p{
