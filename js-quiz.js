@@ -160,6 +160,7 @@ var quiz = {
 		}
 		html += "</h1>";
 		html += "<div>You scored " + score + " out of " + total + ".</div>";
+		document.getElementById("results").style.visibility = "visible";
 		document.getElementById("quiz-wrap").innerHTML = html;
 	}
 };

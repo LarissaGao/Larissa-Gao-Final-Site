@@ -93,7 +93,7 @@ h4 a:hover {
 	float: left;
 	display: inline;
 	margin-right: 1.5%;
-  background: #58889e;
+  background: #163750;
   height: 20px;
 }
 
@@ -299,6 +299,44 @@ img {
      border: 3px solid #ccc;
      border-radius: 10px;
 }
+
+/*photogallery*/
+#body {
+  display: flex;
+  justify-content: center;
+}
+
+.imageGallery {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+}
+
+.imageHolder {
+  margin: 20px 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.imageHolder caption {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+  max-width: 500px;
+}
+
+.button_holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hideThisDiv {
+  display: none;
+}
+
 
 /* footer */
 .search-text{
