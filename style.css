@@ -164,6 +164,13 @@ p a:hover {
     opacity: 0.7;
 }
 
+#captions p{
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+
 img {
     border: none;
     width: 50%;
