@@ -50,6 +50,67 @@ h4 a:hover {
   margin: 0px;
 }
 
+#datawrapper-chart-TnQ2g{
+  width: 90%;
+  width: 0;
+  min-width: 80%;
+  border: none;
+  height: 320px;
+}
+
+#datawrapper-chart-AJZzC{
+  width: 0px;
+  min-width: 70%;
+  border: none;
+  height: 282px;
+}
+
+#chart_container{
+  width: 100%;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.rows {
+  margin-bottom: 0.2em;
+	padding-bottom: 0.2em;
+	border-bottom: 1px dotted #bbb;
+	width: 100%;
+	float: left;
+}
+
+.Age {
+	width: 100%;
+	margin-bottom: 0.2em;
+	font-family: 'Oswald', sans-serif;
+	float: left;
+  text-align: left;
+	font-size: 1.1em;
+  font-style: italic;
+}
+
+.Value {
+	float: left;
+	display: inline;
+	margin-right: 1.5%;
+  background: #58889e;
+  height: 20px;
+}
+
+.ValueNumber {
+	margin-bottom: 0.2em;
+	font-family: 'Oswald', sans-serif;
+	float: left;
+	font-size: 0.9em;
+	display: inline;
+}
+
+@media only screen and (min-width: 600px) {
+  .Age {
+    width: 200px;
+  }
+}
+
 ul {
     list-style-type: none;
     text-transform: uppercase;
@@ -238,6 +299,7 @@ img {
      border: 3px solid #ccc;
      border-radius: 10px;
 }
+
 /* footer */
 .search-text{
 	margin-top:50px;
@@ -250,7 +312,7 @@ img {
 	height:45px;
 	width:40%;
 	padding-left:20px;
-    color:black;
+  color:black;
 }
 
 .search-text .btn-search{
@@ -310,7 +372,6 @@ footer{
 }
 
 
-
 @media screen and (max-width: 800px) {
   p {
     font-size: 18px;
@@ -328,6 +389,8 @@ footer{
     flex-flow: wrap;
   }
 }
+
+
 
 @media screen and (max-width: 600px) {
   #navigation ul{
