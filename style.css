@@ -197,49 +197,43 @@ img {
   font-size: 20px;
 }
 
-#answers h2{
-  font-size: 24px;
-}
-#answers p{
-    font-size: 22px;
-    text-align: center;
-}
-
 #moreinfo p{
   text-align: center;
 }
 
-/* The entire quiz form */
-#quiz-wrap {
+#answer1{
+    padding: 15px;
+    margin: 10px;
+    background: #fff;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+  }
+
+
+
+#quiz{
   font-family: 'Oxygen', sans-serif;
+    text-align: center;
 }
 
-/* Wrapper of each question */
-#quiz-wrap .question {
-  padding: 15px;
-  margin: 10px;
-  background: #fff;
-  border: 3px solid #ccc;
-  border-radius: 10px;
-}
-
-/* Question */
-#quiz-wrap h1 {
+#quiz p{
   font-size: 22px;
   margin: 5px 0;
+  font-weight: bold;
 }
 
-/* Options */
-#quiz-wrap label {
-  display: block;
-  width: 100%;
-  font-size: 20px;
-  margin-top: 10px;
-  color: #333;
+#mc{
+  font-size: 18px;
+  margin: 5px 0;
+  font-weight: lighter;
 }
 
-/* Submit Button */
-#quiz-wrap input[type=submit] {
+#answer2 p{
+  font-size: 18px;
+  margin: 20px 0;
+  font-weight: lighter;
+}
+#button{
   color: #fff;
   background: #da3e44;
   font-family: 'Roboto', sans-serif;
@@ -251,63 +245,12 @@ img {
   margin-bottom: 40px;
 }
 
-#answer1{
-    padding: 15px;
-    margin: 10px;
-    background: #fff;
-    border: 3px solid #ccc;
-    border-radius: 10px;
-  }
-#answer2{
-    padding: 15px;
-    margin: 10px;
-    background: #fff;
-    border: 3px solid #ccc;
-    border-radius: 10px;
-  }
-#answer3{
-      padding: 15px;
-      margin: 10px;
-      background: #fff;
-      border: 3px solid #ccc;
-      border-radius: 10px;
+#results{
+  margin-bottom: 50px;
 }
-#answer4{
-     padding: 15px;
-     margin: 10px;
-     background: #fff;
-     border: 3px solid #ccc;
-     border-radius: 10px;
+#fifthlink{
+  margin-bottom: 100px;
 }
-#answer5{
-     padding: 15px;
-     margin: 10px;
-     background: #fff;
-     border: 3px solid #ccc;
-     border-radius: 10px;
-}
-#answer6{
-     padding: 15px;
-     margin: 10px;
-     background: #fff;
-     border: 3px solid #ccc;
-     border-radius: 10px;
-}
-#answer7{
-     padding: 15px;
-     margin: 10px;
-     background: #fff;
-     border: 3px solid #ccc;
-     border-radius: 10px;
-}
-#answer8{
-     padding: 15px;
-     margin: 10px;
-     background: #fff;
-     border: 3px solid #ccc;
-     border-radius: 10px;
-}
-
 /*photogallery*/
 #body {
   display: flex;

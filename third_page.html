@@ -9,7 +9,7 @@
   <meta name="author" content="Larissa Gao">
   <meta name="keywords" content="Larissa Gao, J4502, J7502"/>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="js-quiz.js"></script>
+  <script src="js-quiz.js" defer></script>
    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
@@ -31,12 +31,64 @@
   <div id="cta">
     <h1>Welcome to Mental Health Quiz!!!</h1>
     <p>Although we can learn knowledge about mental health on the internet,<br> are you sure that you can answer the questions below correctly?<br>Go ahead, answer questions and you will get your scores after that!</p>
-    <p>All questions were based on information from <a href="https://www.cdc.gov/mentalhealth/quiz/index.htm">CDC</a>. Here are <a href="fifth_page.html">the correct answers</a> (Please answer questions at first).</p>
-  </div>
+    <p>All questions were based on information from <a href="https://www.cdc.gov/mentalhealth/quiz/index.htm">CDC</a> and The Diagnostic and Statistical Manual Disorders. Here are <a href="fifth_page.html">the correct answers</a> (Please answer questions at first).</p>
+
       <!-- [QUIZ CONTAINER] -->
-  <form id="quiz-wrap">
-  <div id="results"></div>
-  </form>
+  <form id="quiz" name="quiz">
+  <div id="answer1">
+  <p>1)Poor mental health may cause chronic physical conditions like</p>
+    <input id="mc" type ="radio" name="question1" value="answer1"> Heart disease<br>
+    <input id="mc" type ="radio" name="question1" value="answer2"> Stroke<br>
+    <input id="mc" type ="radio" name="question1" value="answer3"> Cancer<br>
+    <input id="mc" type ="radio" name="question1" value="answer4"> All of the above<br>
+  </div>
+  <div id="answer1">
+  <p>2)Is mental health disorder a common issue?</p>
+    <input id="mc" type ="radio" name="question2" value="answer5"> Yes<br>
+    <input id="mc" type ="radio" name="question2" value="answer6"> No<br>
+  </div>
+  <div id="answer1">
+  <p>3)Suicide is the ___ cause of death among people from 15 to 34 in the U.S.</p>
+    <input id="mc" type ="radio" name="question3" value="answer7"> 4th<br>
+    <input id="mc" type ="radio" name="question3" value="answer8"> 10th<br>
+    <input id="mc" type ="radio" name="question3" value="answer9"> 2nd<br>
+    <input id="mc" type ="radio" name="question3" value="answer10"> 1st<br>
+  </div>
+  <div id="answer1">
+  <p>4)Can mental health be treated?</p>
+    <input id="mc" type ="radio" name="question4" value="answer11"> Yes<br>
+    <input id="mc" type ="radio" name="question4" value="answer12"> No<br>
+  </div>
+  <div id="answer1">
+  <p>5)Half of mental illness occurs before a person turns ___ years old.</p>
+    <input id="mc" type ="radio" name="question5" value="answer13"> 14<br>
+    <input id="mc" type ="radio" name="question5" value="answer14"> 18<br>
+    <input id="mc" type ="radio" name="question5" value="answer15"> 21<br>
+    <input id="mc" type ="radio" name="question5" value="answer16"> 24<br>
+  </div>
+  <div id="answer1">
+  <p>6)How many mental disorders defined by The Diagnostic and Statistical Manual Disorders?</p>
+    <input id="mc" type ="radio" name="question6" value="answer17"> 1-100<br>
+    <input id="mc" type ="radio" name="question6" value="answer18"> 100-200<br>
+    <input id="mc" type ="radio" name="question6" value="answer19"> 300-400<br>
+    <input id="mc" type ="radio" name="question6" value="answer20"> Over 400<br>
+  </div>
+  <div id="answer1">
+  <p>7)Which one listed below is not mental disorder?</p>
+    <input id="mc" type ="radio" name="question7" value="answer21"> Perfectionism<br>
+    <input id="mc" type ="radio" name="question7" value="answer22"> Sleepwalking disorder<br>
+    <input id="mc" type ="radio" name="question7" value="answer23"> Down Syndrome<br>
+    <input id="mc" type ="radio" name="question7" value="answer24"> None of them<br>
+  </div>
+<input id="button" type="button" value="Submit" onclick="check();">
+
+  <div id="results">
+    <p id="message"></p>
+    <p id="number_correct"></p>
+   </div>
+  <div id="fifthlink"><p>Here are <a href="fifth_page.html">the correct answers</a>. Please check out!</p></div>
+  </div>
+</form>
 
 
 
