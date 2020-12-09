@@ -251,6 +251,15 @@ img {
 #fifthlink{
   margin-bottom: 100px;
 }
+#quiz label{
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  margin-top: 10px;
+  color: #333;
+}
+
+
 /*photogallery*/
 #body {
   display: flex;
