@@ -203,7 +203,7 @@ img {
 
 #answer1{
     padding: 15px;
-    margin: 10px;
+    margin: 20px;
     background: #fff;
     border: 3px solid #ccc;
     border-radius: 10px;
@@ -212,19 +212,34 @@ img {
 
 
 #quiz{
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Lato', sans-serif;
     text-align: center;
 }
 
-#quiz p{
+#quiz h2{
+  font-family: 'Lato', sans-serif;
   font-size: 22px;
+  font-weight: bolder;
   margin: 5px 0;
-  font-weight: bold;
+}
+
+#quiz h2 a{
+  text-decoration: none;
+  font-weight: bolder;
+  color:#163750;
+   font-style: italic;
+}
+
+#quiz h2 a:hover {
+  background-color: #163750;
+  font-weight: bolder;
+  color: white;
+  opacity: 0.7;
 }
 
 #mc{
   font-size: 18px;
-  margin: 5px 0;
+  margin: 10px 0;
   font-weight: lighter;
 }
 
@@ -235,8 +250,9 @@ img {
 }
 #button{
   color: #fff;
-  background: #da3e44;
-  font-family: 'Roboto', sans-serif;
+  background: #AB2125;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
   padding: 10px;
   border: 0;
   padding: 10px 20px;
@@ -246,11 +262,13 @@ img {
 }
 
 #results{
+  font-family: 'Lato', sans-serif;
   margin-bottom: 50px;
 }
 #fifthlink{
   margin-bottom: 100px;
 }
+
 #quiz label{
   display: block;
   width: 100%;
