@@ -56,6 +56,7 @@ h4 a:hover {
   min-width: 80%;
   border: none;
   height: 320px;
+  font-family: 'Lato', sans-serif;
 }
 
 #datawrapper-chart-AJZzC{
@@ -66,7 +67,7 @@ h4 a:hover {
 }
 
 #chart_container{
-  width: 100%;
+  width: 90%;
   margin-left: 100px;
   margin-right: 100px;
 }
@@ -201,13 +202,21 @@ img {
   text-align: center;
 }
 
-#answer1{
+fieldset{
     padding: 15px;
     margin: 20px;
     background: #fff;
     border: 3px solid #ccc;
     border-radius: 10px;
   }
+
+#answer11 , #answer12 , #answer13 , #answer14 , #answer15 , #answer16 , #answer17{
+      padding: 15px;
+      margin: 20px;
+      background: #fff;
+      border: 3px solid #ccc;
+      border-radius: 10px;
+    }
 
 
 
@@ -243,11 +252,11 @@ img {
   font-weight: lighter;
 }
 
-#answer2 p{
+#answer21 p , #answer22 p , #answer23 p , #answer24 p , #answer25 p , #answer26 p , #answer27 p {
   font-size: 18px;
-  margin: 20px 0;
   font-weight: lighter;
 }
+
 #button{
   color: #fff;
   background: #AB2125;
@@ -372,11 +381,8 @@ footer{
 }
 
 .address li a:hover , .menu li a:hover{
-    color: #da3e44;
-    -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
+    color: #163750;
+    background-color: white;
 }
 
 .address .fa{
