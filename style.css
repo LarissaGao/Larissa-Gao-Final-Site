@@ -57,6 +57,7 @@ h4 a:hover {
   border: none;
   height: 320px;
   font-family: 'Lato', sans-serif;
+  overflow: hidden;
 }
 
 #datawrapper-chart-AJZzC{
@@ -64,6 +65,8 @@ h4 a:hover {
   min-width: 70%;
   border: none;
   height: 282px;
+  font-family: 'Lato', sans-serif;
+  overflow: hidden;
 }
 
 #chart_container{
