@@ -219,16 +219,6 @@ fieldset{
     border-radius: 10px;
   }
 
-#answer11 , #answer12 , #answer13 , #answer14 , #answer15 , #answer16 , #answer17{
-      padding: 15px;
-      margin: 20px;
-      background: #fff;
-      border: 3px solid #ccc;
-      border-radius: 10px;
-    }
-
-
-
 #quiz{
   font-family: 'Lato', sans-serif;
     text-align: center;
@@ -284,13 +274,12 @@ fieldset{
 button{
   color: #fff;
   background: #AB2125;
-  font-family: 'Lato', sans-serif;
-  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
   padding: 5px;
   border: 0;
   margin-top: 10px;
   font-size: 15px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 #body a{
